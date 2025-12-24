@@ -1,0 +1,38 @@
+{
+  "name": "undoai",
+  "version": "1.0.0",
+  "description": "Free, local undo button for AI coding",
+  "main": "dist/cli/index.js",
+  "type": "module",
+  "bin": {
+    "undoai": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli/index.js",
+    "test": "node dist/cli/index.js"
+  },
+  "keywords": [
+    "cli",
+    "undo",
+    "ai",
+    "snapshot",
+    "restore",
+    "mrq"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "chokidar": "^3.5.3",
+    "commander": "^14.0.2",
+    "minimatch": "^10.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.10.0",
+    "inquirer": "^9.3.8",
+    "typescript": "^5.3.0"
+  }
+}
